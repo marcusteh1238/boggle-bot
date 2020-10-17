@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/marcusteh1238/boggle-bot/issues"
   },
-  "homepage": "https://github.com/marcusteh1238/boggle-bot#readme"
+  "homepage": "https://github.com/marcusteh1238/boggle-bot#readme",
+  "dependencies": {
+    "discord.js": "^12.3.1",
+    "dotenv": "^8.2.0"
+  }
 }
