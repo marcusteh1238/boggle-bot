@@ -19,5 +19,7 @@ client.on("message", (message) => {
 
     const trigger = message.content.split(' ')[0];
     const removedPrefix = trigger.replace(default_prefix, 'cmd:');
-    eventEmitter.emit(removedPrefix, message);
+    if (removedPrefix !== "cmd:") {
+        eventEmitter.emit(removedPrefix, message);
+    }
 })
