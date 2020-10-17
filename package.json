@@ -1,0 +1,24 @@
+{
+  "name": "boggle-bot",
+  "version": "1.0.0",
+  "description": "multiplayer boggle bot for discord.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marcusteh1238/boggle-bot.git"
+  },
+  "keywords": [
+    "boggle",
+    "discord",
+    "bot"
+  ],
+  "author": "marcusteh1238",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/marcusteh1238/boggle-bot/issues"
+  },
+  "homepage": "https://github.com/marcusteh1238/boggle-bot#readme"
+}
