@@ -2,9 +2,7 @@ const requireAll = require("require-all");
 const path = require("path");
 const { EventEmitter } = require("events");
 
-const config = require("../../config.json");
 const logger = require("../helpers/logger");
-
 
 const eventEmitter = new EventEmitter();
 
