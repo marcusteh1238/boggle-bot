@@ -4,6 +4,7 @@
   "description": "multiplayer boggle bot for discord.",
   "main": "index.js",
   "scripts": {
+    "dev": "nodemon index.js | pino-pretty -l -t HH:MM:ss",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -23,6 +24,11 @@
   "homepage": "https://github.com/marcusteh1238/boggle-bot#readme",
   "dependencies": {
     "discord.js": "^12.3.1",
-    "dotenv": "^8.2.0"
+    "dotenv": "^8.2.0",
+    "pino": "^6.7.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.5",
+    "pino-pretty": "^4.3.0"
   }
 }
