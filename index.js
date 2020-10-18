@@ -1,7 +1,7 @@
 require("dotenv").config();
 const { Client, Collection } = require("discord.js");
 
-const { default_prefix } = require("./config.json");
+const { defaultPrefix } = require("./config.js");
 const logger = require("./src/helpers/logger");
 const eventEmitter = require("./src/core/commandListener");
 
@@ -15,10 +15,10 @@ client.on('ready', () => {
 client.on("message", (message) => {
     // ignore bots
     if (message.author.bot) return;
-    if (!message.content.startsWith(default_prefix)) return;
+    if (!message.content.startsWith(defaultPrefix)) return;
 
     const trigger = message.content.split(' ')[0];
-    const removedPrefix = trigger.replace(default_prefix, 'cmd:');
+    const removedPrefix = trigger.replace(defaultPrefix, 'cmd:');
     if (removedPrefix !== "cmd:") {
         eventEmitter.emit(removedPrefix, message);
     }
